@@ -1,0 +1,16 @@
+Package: popiData.bnduk
+Type: Package
+Date: 2020-12-25
+Title: Boundaries related to UK geographies
+Version: 0.0.1
+Authors@R: person("Luca", "Valnegri", email = "l.valnegri@datamaps.co.uk", role = c("aut", "cre"))
+Description: This package consists of boundaries designed to help Data Sourcing, Cleaning and Wrangling, plus a bunch of other visualization and geographical stuff.
+License: file LICENSE
+Encoding: UTF-8
+Depends: R (>= 4.0)
+Imports:
+    rgdal,
+    sp
+Suggests:
+LazyData: true
+RoxygenNote: 7.1.1
