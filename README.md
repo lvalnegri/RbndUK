@@ -12,7 +12,7 @@ They are related to the following UK Geographies:
    - **CTY**.  ENG. County (only for UA/MD/LB, see LAD)
    - **RGN**.  ENG. Region
    - **CTRY**. UK.  Country
-   - **WKZ**.  UK.  2011 Census Workplace Zone (WPZ)
+   - **WPZ**.  UK.  2011 Census Workplace Zone (WPZ)
    
  - **POSTCODES**
    - **PCS**. UK: Postcode Sector (built as a *Point in Polygon* operation between *postcode units* and *Output Areas*)
