@@ -12,5 +12,5 @@ Imports:
     sp
 Suggests:
 LazyData: true
-URL: https://github.com/lvalnegri/packages-data_bnduk
+URL: https://github.com/lvalnegri/dmpkg.bnduk
 RoxygenNote: 7.1.1
