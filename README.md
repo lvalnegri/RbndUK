@@ -49,3 +49,17 @@ They are related to the following UK Geographies:
    - **CIS**.  ENG. Covid Infection Survey (Oct-2020)
    
  
+### Credits
+
+ - Contains OS data © Crown copyright and database rights [2020]
+
+ - Contains National Statistics data © Crown copyright and database rights [2020]
+
+ - Source: Office for National Statistics licensed under the Open Government Licence v.3.0
+
+ - Contains Parliamentary information licensed under the Open Parliament Licence v3.0
+
+ - Contains Royal Mail data © Royal Mail copyright and database rights [2020]
+
+ - (NI only) Contains or is based upon Land & Property Services (LPS) Intellectual Property subject to Crown copyright [License]
+ 
