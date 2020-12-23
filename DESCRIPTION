@@ -1,4 +1,4 @@
-Package: popiData.bnduk
+Package: dmpkg.bnduk
 Type: Package
 Date: 2020-12-25
 Title: Boundaries related to UK geographies
@@ -9,8 +9,8 @@ License: file LICENSE
 Encoding: UTF-8
 Depends: R (>= 4.0)
 Imports:
-    rgdal,
     sp
 Suggests:
 LazyData: true
+URL: https://github.com/lvalnegri/packages-data_bnduk
 RoxygenNote: 7.1.1
