@@ -1,8 +1,8 @@
 ## Boundaries related to UK Geographies
 
-The files included here are of class `sp` and saved as `RDS` format
+The files included in this [*R*](https://cran.r-project.org/) package are of class [`sp`](https://cran.r-project.org/package=sp) and saved in [`RDS`](https://rstudio-education.github.io/hopr/dataio.html#r-files) format
 
-They are related to the following UK Geographies:
+They are related to, and assume the name of, the following UK Geographies:
 
 - **CENSUS**:
    - **OA**.   UK.  GB: 2011 Census Output Area (OA); NIE: 2011 Census Small Area (SA)
