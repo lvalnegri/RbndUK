@@ -33,8 +33,8 @@ They are related to, and assume the name of, the following UK Geographies:
    
  - **SOCIAL**
    - **PAR**. EW. ENG: Civil Parish or Unparished; WLS: Community
-   - **PFN**. EW. Police Force Neighborhood (built as a *best fit* between *Output Areas* and [Police Neighborhood]())
-   - **PFA**. EW. Police Force Area
+   - **PFN**. UK. ENW: Police Force Neighborhood (built as a *best fit* between *Output Areas* and [Police Neighborhood](https://data.police.uk/data/boundaries/)). S: Correspond to **WARD**.
+   - **PFA**. UK NOV-20. ENW: Police Force Area. S: Correspond to **LAD**.
    - **FRA**. EW. Fire Rescue Authorities (Dec-2019)
    - **CSP**. EW. Community Safety Partnership (Dec-2019)
    - **LPA**. EW. Local Planning Authorities (Apr-2020)
@@ -52,14 +52,9 @@ They are related to, and assume the name of, the following UK Geographies:
 ### Credits
 
  - Contains OS data © Crown copyright and database rights [2020]
-
  - Contains National Statistics data © Crown copyright and database rights [2020]
-
  - Source: Office for National Statistics licensed under the Open Government Licence v.3.0
-
  - Contains Parliamentary information licensed under the Open Parliament Licence v3.0
-
  - Contains Royal Mail data © Royal Mail copyright and database rights [2020]
-
  - (NI only) Contains or is based upon Land & Property Services (LPS) Intellectual Property subject to Crown copyright [License]
  
