@@ -14,24 +14,24 @@ They are related to, and assume the name of, the following UK Geographies:
    - **CTRY**. UK.  Country
    - **WPZ**.  UK.  2011 Census Workplace Zone (WPZ)
    
- - **POSTCODES**
+### POSTCODES
    - **PCS**. UK: Postcode Sector (built as a *Point in Polygon* operation between *postcode units* and *Output Areas*)
    - **PCD**. UK: Postcode District
    - **PCT**. UK: Post Town
    - **PCA**. UK: Postcode Area
    
- - **ELECTORAL**
+### ELECTORAL
    - **PCON**. UK:  Westminster Parliamentary Constituency
    - **WARD**. UK:  Electoral Division
    - **CED**.  ENG: Electoral County
    
- - **URBAN**
+### URBAN
    - **TTWA**. UK: Travel to Work Area. There are also six *cross-border* areas (K01000009, ..., K01000014)
    - **MTC**.  EW: Major Towns and Cities
    - **BUAS**. EW: Built-up Area
    - **BUA**.  EW: Built-up Area Sub-division
    
- - **SOCIAL**
+### SOCIAL
    - **PAR**. EW. ENG: Civil Parish or Unparished; WLS: Community
    - **PFN**. UK. ENW: Police Force Neighborhood (built as a *best fit* between *Output Areas* and [Police Neighborhood](https://data.police.uk/data/boundaries/)). S: Correspond to **WARD**.
    - **PFA**. UK NOV-20. ENW: Police Force Area. S: Correspond to **LAD**.
@@ -41,7 +41,7 @@ They are related to, and assume the name of, the following UK Geographies:
    - **RGD**. EW. Registration Districts (Apr-2019)
    - **LRF**. EW. Local Resilience Forums (Dec-2019)
  
- - **HEALTH**
+### HEALTH
    - **CCG**.  UK.  ENG: Clinical Commissioning Group (CCG); WLS: Local Health Board (LHB); SCO: Community Health Partnership (CHP); NIE: Local Commissioning Group (LCG) 
    - **STP**.  ENG.
    - **NHSO**. ENG. NHS Local Office (formerly Local Area Team)
@@ -49,7 +49,7 @@ They are related to, and assume the name of, the following UK Geographies:
    - **CIS**.  ENG. Covid Infection Survey (Oct-2020)
    
  
-### Credits
+## Credits
 
  - Contains OS data © Crown copyright and database rights [2020]
  - Contains National Statistics data © Crown copyright and database rights [2020]
