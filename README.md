@@ -4,7 +4,7 @@ The files included in this [*R*](https://cran.r-project.org/) package are of cla
 
 They are related to, and assume the name of, the following UK Geographies:
 
-- **CENSUS**:
+### CENSUS
    - **OA**.   UK.  GB: 2011 Census Output Area (OA); NIE: 2011 Census Small Area (SA)
    - **LSOA**. UK.  ENG, WLS: 2011 Census Lower Layer Super Output Area (LSOA); SCO: 2011 Census Data Zone (DZ); NIE: 2011 Census Small Output Area (SOA)
    - **MSOA**. GB.  ENG, WLS: 2011 Census Middle Layer Super Output Area (MSOA); SCO: 2011 Census Intermediate Zone (I Z)
