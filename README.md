@@ -1,5 +1,9 @@
 ## Boundaries related to UK Geographies
 
+Do not use this package at the moment as it is still a work in progress.
+
+*Last update: 21-01-2021*
+
 The files included in this [*R*](https://cran.r-project.org/) package are of class [`sp`](https://cran.r-project.org/package=sp) and saved in [`RDS`](https://rstudio-education.github.io/hopr/dataio.html#r-files) format
 
 They are related to, and assume the name of, the following UK Geographies:
