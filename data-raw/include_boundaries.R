@@ -1,8 +1,8 @@
 #########################################################################################
-# dmpkg.geouk * Boundaries UK * Copy boundaries from PUBLIC repo to package DATA subdir #
+# dmpkg.bnduk * Boundaries UK * Copy boundaries from PUBLIC repo to package DATA subdir #
 #########################################################################################
 
-bnames <- levels(dmpkg.geouk::location_types$location_type)
+bnames <-dmpkg.geouk::location_types$location_type
 
 for(bn in bnames){
     if(file.exists(file.path(dmpkg.funs::bnduk_spath, bn))){

@@ -3,18 +3,22 @@
 \docType{data}
 \name{OA}
 \alias{OA}
-\title{OA. Boundaries for Output Areas in UK with geographical coordinates and}
+\title{OA.}
 \format{
-A SpatialPolygonsDataFrame with an \code{id} column
+A SpatialPolygonsDataFrame with only one \code{id} column for the corresponding \em{ONS} codes
 
-To add data load either the package \url{} or \url{}
+You can add data easily loading for example the \url{https://github.com/lvalnegri/dmpkg.geodemouk} package
 
-For further details on the UK Geographies, see \url{http://}
+For further details on all the available UK Geographies (as of Nov 2020), see
+\url{https://geoportal.statistics.gov.uk/datasets/register-of-geographic-codes-november-2020-for-the-united-kingdom}
 }
 \usage{
 OA
 }
 \description{
-OA. Boundaries for Output Areas in UK with geographical coordinates and
+Digital Vector Boundaries in \code{rds} format file for all \em{Output Areas} in the UK with geographical coordinates and
+ - England and Wales: Generalised (20m) - clipped to the coastline (Mean High Water mark)
+ - Scotland:
+ - Northern Ireland:
 }
 \keyword{datasets}
