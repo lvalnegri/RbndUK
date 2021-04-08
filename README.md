@@ -1,6 +1,6 @@
 ## Boundaries related to UK Geographies
 
-Do not use this package at the moment as it is still a work in progress.
+Do not use this package in production at the moment as it is still a work in progress.
 
 *Last update: 21-01-2021*
 
