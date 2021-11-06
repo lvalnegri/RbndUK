@@ -5,17 +5,20 @@
 \alias{OA}
 \title{OA.}
 \format{
-A \code{sf} dataframe with only one \code{OA} column for the corresponding \em{ONS} codes
+A \code{sf} dataframe with only one \code{OA} column for the corresponding \emph{ONS} codes.
 
-You can add data easily loading for example the \url{https://github.com/lvalnegri/dmpkg.datauk} package
+You can easily add data loading for example the \url{https://github.com/lvalnegri/dmpkg.datauk} package.
 
-For further details see \url{https://geoportal.statistics.gov.uk/search?collection=Dataset&sort=-modified&tags=all(BDY_OA)}
+For further details see \url{https://geoportal.statistics.gov.uk/search?collection=Dataset&sort=-modified&tags=all(BDY_OA)}.
 }
 \usage{
 OA
 }
 \description{
-Digital Vector Boundaries in \code{sf} format file and \emph{WGS84} CRS (\emph{epsg}) 4326) 
-for all 232,296 \em{Output Areas} in the UK (\em{Small Areas} in N.Ireland)
+Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
+for all 232,296 \emph{Output Areas} in the UK (\emph{Small Areas} in N.Ireland).
+}
+\details{
+Last update: 2011 (this is a \emph{frozen} entity).
 }
 \keyword{datasets}

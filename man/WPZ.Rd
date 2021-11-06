@@ -11,6 +11,9 @@
 WPZ
 }
 \description{
-Digital Vector Boundaries in \code{sf} format file and \emph{WGS84} CRS (\emph{epsg}) 4326) for all 60,709 \em{Workplace Zones} in the UK
+Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) for all 60,709 \emph{Workplace Zones} in the UK.
+}
+\details{
+Last update: 2011 (this is a \emph{frozen} entity).
 }
 \keyword{datasets}
