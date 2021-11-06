@@ -5,20 +5,17 @@
 \alias{OA}
 \title{OA.}
 \format{
-A SpatialPolygonsDataFrame with only one \code{id} column for the corresponding \em{ONS} codes
+A \code{sf} dataframe with only one \code{OA} column for the corresponding \em{ONS} codes
 
-You can add data easily loading for example the \url{https://github.com/lvalnegri/dmpkg.geodemouk} package
+You can add data easily loading for example the \url{https://github.com/lvalnegri/dmpkg.datauk} package
 
-For further details on all the available UK Geographies (as of Nov 2020), see
-\url{https://geoportal.statistics.gov.uk/datasets/register-of-geographic-codes-november-2020-for-the-united-kingdom}
+For further details see \url{https://geoportal.statistics.gov.uk/search?collection=Dataset&sort=-modified&tags=all(BDY_OA)}
 }
 \usage{
 OA
 }
 \description{
-Digital Vector Boundaries in \code{rds} format file for all \em{Output Areas} in the UK with geographical coordinates and
- - England and Wales: Generalised (20m) - clipped to the coastline (Mean High Water mark)
- - Scotland:
- - Northern Ireland:
+Digital Vector Boundaries in \code{sf} format file and \emph{WGS84} CRS (\emph{epsg}) 4326) 
+for all 232,296 \em{Output Areas} in the UK (\em{Small Areas} in N.Ireland)
 }
 \keyword{datasets}
