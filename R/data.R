@@ -1,48 +1,27 @@
-#' @import sp
+#' @import sf
 NULL
 
 #' OA.
 #'
-#' Digital Vector Boundaries in \code{rds} format file for all \em{Output Areas} in the UK with geographical coordinates and
-#'  - England and Wales: Generalised (20m) - clipped to the coastline (Mean High Water mark)
-#'  - Scotland:
-#'  - Northern Ireland:
+#' Digital Vector Boundaries in \code{sf} format file and \emph{WGS84} CRS (\emph{epsg}) 4326) 
+#' for all 232,296 \em{Output Areas} in the UK (\em{Small Areas} in N.Ireland) 
 #'
-#' @format A SpatialPolygonsDataFrame with only one \code{id} column for the corresponding \em{ONS} codes
+#' @format A \code{sf} dataframe with only one \code{OA} column for the corresponding \em{ONS} codes
 #'
-#' You can add data easily loading for example the \url{https://github.com/lvalnegri/dmpkg.geodemouk} package
+#' You can add data easily loading for example the \url{https://github.com/lvalnegri/dmpkg.datauk} package
 #'
-#' For further details on all the available UK Geographies (as of Nov 2020), see
-#' \url{https://geoportal.statistics.gov.uk/datasets/register-of-geographic-codes-november-2020-for-the-united-kingdom}
+#' For further details see \url{https://geoportal.statistics.gov.uk/search?collection=Dataset&sort=-modified&tags=all(BDY_OA)}
 #'
 'OA'
 
-#' LSOA.
+#' WPZ.
 #'
-#' Digital Vector Boundaries in \code{rds} format file for \em{Lower Layer Super Output Areas} in UK with geographical coordinates and
-#' Built by dissolving \code{OA} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/dmpkg.geodemouk} package
+#' Digital Vector Boundaries in \code{sf} format file and \emph{WGS84} CRS (\emph{epsg}) 4326) for all 60,709 \em{Workplace Zones} in the UK
 #'
-#' @format A SpatialPolygonsDataFrame with an \code{id} column
+#' @format A \code{sf} dataframe with only one \code{WPZ} column for the corresponding \em{ONS} codes
 #'
-#' You can add data easily loading for example the package \url{https://github.com/lvalnegri/dmpkg.geodemouk}
+#' You can add data easily loading for example the \url{https://github.com/lvalnegri/dmpkg.datauk} package
 #'
-#' More information about ??? boundaries can be found at \url{}
+#' For further details see \url{https://geoportal.statistics.gov.uk/search?collection=Dataset&sort=name&tags=all(BDY_WZ%2CDEC_2011)}
 #'
-#' For further details on all the available UK Geographies (as of Nov 2020), see
-#' \url{https://geoportal.statistics.gov.uk/datasets/register-of-geographic-codes-november-2020-for-the-united-kingdom}
-#'
-'LSOA'
-
-#' MSOA. Boundaries for Middle Layer Super Output Areas in UK with geographical coordinates and
-#'
-#' @format A SpatialPolygonsDataFrame with an \code{id} column
-#'
-#' To add data load either the package \url{} or \url{}
-#'
-#' More information about ??? boundaries can be found at \url{}
-#'
-#' For further details on all the available UK Geographies (as of Nov 2020), see
-#' \url{https://geoportal.statistics.gov.uk/datasets/register-of-geographic-codes-november-2020-for-the-united-kingdom}
-#'
-'MSOA'
-
+'WPZ'
