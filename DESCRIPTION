@@ -4,7 +4,7 @@ Date: 2021-11-21
 Title: Boundaries related to UK geographies
 Version: 0.1.0
 Authors@R: person("Luca", "Valnegri", email = "l.valnegri@datamaps.co.uk", role = c("aut", "cre"))
-Description: This package consists of digital vector boundaries designed to help Data Sourcing, Cleaning and Wrangling, plus a bunch of other visualization and geographical stuff.
+Description: This package consists of digital vector boundaries designed to help geographical data visualization and spatial analysis.
 License: file LICENSE
 Encoding: UTF-8
 Depends: R (>= 4.0)
