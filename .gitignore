@@ -27,5 +27,4 @@ vignettes/*.pdf
 # R Environment Variables
 .Renviron
 .Rbuildignore
-popiData_bnduk.Rproj
-dmpkg.bnduk.Rproj
+RbndUK.Rproj
