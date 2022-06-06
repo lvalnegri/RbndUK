@@ -33,6 +33,7 @@ st_write(y, file.path(in_path, 'UK.shp'), delete_layer = TRUE)
 # save polygons in the boundaries/shp+s00 folders for further processing
 st_write(y, file.path(out_path, 'OA.shp'), delete_layer = TRUE)
 saveRDS(y |> st_make_valid(), file.path(bnduk_path, 's00', 'OA'))
+saveRDS(y |> st_transform(27700) |> st_make_valid(), file.path(bnduk_path, 's00', 'OAgb'))
 
 # reduce the complexity of the boundaries, saving in "rds" format
 for(p in seq(10, 50, 10)){

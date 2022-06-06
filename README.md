@@ -1,16 +1,32 @@
 ## Digital Vector Boundaries related to UK Geographies
 
-*Last update: 21-11-2021*
+*Last update: 01-11-2021*
 
+
+### Overview
+This *R* package provides a coherent hierrachy of boundaries about most geographical areas in the UK. All boundaries, apart from *WPZ-Workplace Zone*, are built on top of the minimal *OA Output Area* object (or *SA Small Area* as they are called in N.Ireland). This means that some of the maps that you draw upon them are only a geographical approximation of the corresponding developed by the [ONS](https://geoportal.statistics.gov.uk/) (notice though that not all the boundaries found in the package are developed or shared by the *ONS*).
+
+### Installation
+The package is not on *CRAN* (it can't be due to its size). 
+
+You can instead install this package from *github* as:
+```
+# install.packages("devtools")
+devtools::install_github('lvalnegri/dmpkg.bnduk')
+```
+
+Notice that because of the mass of information contained the package file is actually quite big (>250Mb), and it'll take a while for download and installation.
+
+### Content
 The files included in this [*R*](https://cran.r-project.org/) package are now all of class [`sf`](https://cran.r-project.org/package=sf), simplified at 20% (`rmapshaper::ms_simplify`), with the *CRS* transformed to [WGS84, World Geodetic System 1984 (epsg:4326)](https://epsg.io/4326) for easier web interactive mapping using the [leaflet]() package as basis.
 
-All boundaries, but `OA` and `WPZ`, are obtained as the dissolution (`rmapshaper::ms_dissolve`) of the union (`sf::st_union`) of the original national `OA` boundaries (detailed below) using the [OA lookups table](https://github.com/lvalnegri/dmpkg.geouk/blob/main/data-raw/output_areas.csv) built in the [dmpkg.geouk](https://github.com/lvalnegri/dmpkg.geouk) package. This implies that these boundaries, while adequate for statistical purposes, do not comply with ONS geographical specifications.
+All boundaries, but `OA` and `WPZ`, are obtained either as the dissolution (`rmapshaper::ms_dissolve`) or as a *point in polygon* (`sf::st_join` with `sf::st_within`) operation of the union (`sf::st_union`) of the original national `OA` boundaries (detailed below), in the former case using the [OA lookups table](https://github.com/lvalnegri/dmpkg.geouk/blob/main/data-raw/output_areas.csv) built in the [dmpkg.geouk](https://github.com/lvalnegri/dmpkg.geouk) package. This implies that these boundaries, while adequate for statistical purposes, do not precisely comply with ONS geographical specifications.
 
-Besides the geography component, all files contains only the ONS code.
+Besides the `geography` component, all objects contain only the ONS codes. 
 
-They are related to, and assume the name of, the following UK Geographies, split up by categories.
+They are related to, and assume the name of, the following UK Geographies, split up by categories (for more details, see the [locations_types](https://github.com/lvalnegri/dmpkg.geouk/blob/main/data-raw/location_types.csv) table built in the [dmpkg.geouk](https://github.com/lvalnegri/dmpkg.geouk) package).
 
-### CENSUS / ADMIN
+#### CENSUS / ADMIN
 
 - **OA**. UK 2011 (stable). GB: [E00-S00-W00] 2011 Census Output Area (OA); NIE: [N00] 2011 Census Small Area (SA)
 - **LSOA**. UK 2011 (stable). ENG, WLS: [E01-W01] 2011 Census Lower Layer Super Output Area (LSOA); SCO: [S01] 2011 Census Data Zone (DZ); NIE: [95] 2011 Census Small Output Area (SOA)
@@ -21,27 +37,27 @@ They are related to, and assume the name of, the following UK Geographies, split
 - **CTRY**. UK (stable). [E92] Country (CTRY)
 - **WPZ**. UK 2011 (stable). [E33-N19-S34-W35] 2011 Census Workplace Zone (WPZ)
 
-### POSTCODES
+#### POSTCODES
 
 - **PCS**. UK NOV-21. Postcode Sector (built as a *Point in Polygon* operation between *Postcode Units* and *Output Areas*)
 - **PCD**. UK NOV-21. Postcode District
 - **PCT**. UK NOV-21. Post Town
 - **PCA**. UK NOV-21. Postcode Area
 
-### ELECTORAL
+#### ELECTORAL
 
 - **PCON**. UK DEC-20. [E14-N06-S14-W07] Westminster Parliamentary Constituency
 - **WARD**. UK DEC-20. [E05-N08-S13-W05] Electoral Ward
 - **CED**. ENG MAY-21. [E58] Electoral County
 
-### URBAN
+#### URBAN
 
 - **TTWA**. UK 2011 (stable). [E30-N12-S22-W22] Travel to Work Area. There are also six *cross-border* areas [K01]
 - **MTC**. EW 2015 (stable). [J01] Major Towns and Cities
 - **BUA**. EW 2015 (stable). [E34-W34] Built-up Area Sub-division. There are also six *cross-border* areas [K05]
 - **BUAS**. EW 2015 (stable). [E35-W38] Built-up Area. There are also six *cross-border* areas [K06]
 
-### SOCIAL
+#### SOCIAL
 
 - **PAR**. UK DEC-20. ENG: [E04] Civil Parish (PAR), [E43] Non-Civil Parished Area (NCP); WLS: [W04] Community; SCO: [ ] Civil Parish 1930
 - **PFN**. UK NOV-20. ENW: [ ] Police Force Neighborhood (built as a *best fit* between *Output Areas* and [Police Neighborhood](https://data.police.uk/data/boundaries/)). S: Correspond to **WARD**.
@@ -52,7 +68,7 @@ They are related to, and assume the name of, the following UK Geographies, split
 - **RGD**. EW APR-19. [E28-W20] Registration Districts
 - **LRF**. EW DEC-19. [E48-W41] Local Resilience Forums
 
-### HEALTH
+#### HEALTH
 
 - **CCG**. UK. ENG: [E38] Clinical Commissioning Group (CCG); WLS: [W11] Local Health Board (LHB); SCO: [S03] Community Health Partnership (CHP); NIE: [ZC] Local Commissioning Group (LCG)
 - **STP**. ENG. [E54] Sustainability and Transformation Partnership
@@ -60,21 +76,21 @@ They are related to, and assume the name of, the following UK Geographies, split
 - **NHSR**. ENG. [E40] NHS Region
 - **CIS**. ENG DEC-20. [J06] Covid Infection Survey
 
-## Initial Boundaries
+### Initial Boundaries
 
-### OA Output Areas
+#### OA Output Areas
 
 - **England and Wales**: browse to [COA Boundaries](http://geoportal.statistics.gov.uk/datasets?q=COA%20Boundaries&sort_by=name) and download the *Generalised Clipped boundaries* shapefile. The Coordinate Reference System (CRS) is [British National Grid, OSGB_1936 (epsg:27700)](https://epsg.io/27700). There has been an update to the files on the 23rd/24th July 2020.
 - **Scotland**: open the web page [2011 Census Geography](http://www.nrscotland.gov.uk/statistics-and-data/geography/our-products/census-datasets/2011-census/2011-boundaries) and download the *2011 Output Area Boundaries, Clipped to the coastline* zip file. The CRS is the same [epsg:27700](https://epsg.io/27700) as England and Wales.
 - **Northern Ireland** (properly called *small areas*): go to [NISRA Geography](https://www.nisra.gov.uk/publications/small-area-boundaries-gis-format) and download the *ESRI Shapefile format* zip file. The CRS is [Irish Grid, GCS_TM65 (epsg:29902)](https://epsg.io/29902).
 
-### WPZ Workplace Zones
+#### WPZ Workplace Zones
 
 - **England and Wales**: browse to [Workplace Zones Boundaries](https://geoportal.statistics.gov.uk/search?collection=Dataset&sort=name&tags=all(BDY_WZ%2CDEC_2011)) and download the *Generalised Clipped boundaries* shapefile. The CRS is [British National Grid, OSGB_1936 (epsg:27700)](https://epsg.io/27700). There has been an update to the files on the 10th Feb 2021.
 - **Scotland**: open the web page [2011 Census Geography](http://www.nrscotland.gov.uk/statistics-and-data/geography/our-products/census-datasets/2011-census/2011-boundaries) and download the *Workplace Zones 2011 Scotland Boundaries* zip file. The CRS is the same [epsg:27700](https://epsg.io/27700) as England and Wales.
 - **Northern Ireland**: go to [NISRA Geography](https://www.nisra.gov.uk/support/geography/northern-ireland-workplace-zones) and download the *ESRI Shapefile format* zip file. The CRS is [Irish Grid, GCS_TM65 (epsg:29902)](https://epsg.io/29902).
 
-## Attributions
+### Attributions
 
 - Contains OS data © Crown copyright and database rights [2021]
 - Contains National Statistics data © Crown copyright and database rights [2021]

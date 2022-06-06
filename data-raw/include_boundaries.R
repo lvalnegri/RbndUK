@@ -4,7 +4,7 @@
 
 dmpkg.funs::load_pkgs(dmp = FALSE)
 
-bnames <-dmpkg.geouk::location_types$location_type
+bnames <-c(dmpkg.geouk::location_types$location_type, 'UK', 'UKni', 'CTRYni', 'RGNni')
 
 for(bn in bnames){
     if(file.exists(file.path(bnduk_spath, bn))){

@@ -1,0 +1,57 @@
+## Actions
+- [X] rewrite OA and WPZ
+- [X] rewrite parent boundaries built on OA (merge dissolving and simplifying)
+- [ ] UK, CTRY, RGN from ONS files, complete + crop scotland/islands
+- [X] complete `data.R` for the whole export
+- [ ] polygons from postcodes
+- [ ] grids
+- [ ] 
+- [ ] neighbours: 1st order tables (could be placed better in dmpkg.geo ?)
+- [ ] neighbours: higher orders function (could be placed better in dmpkg.geo ?)
+- [ ] 
+
+## 
+
+### CENSUS
+- [X] **OA**.   UK  2011
+- [X] **LSOA**. UK  2011
+- [X] **MSOA**. GB  2011
+> [ ] **LAD**.  UK  MAY-21 x
+> [ ] **CTY**.  ENG MAY-21 x
+- [X] **RGN**.  ENG ...
+- [X] **CTRY**. UK  ...
+- [X] **WPZ**.  UK  2011
+   
+### POSTCODES 
+> [ ] **PCS**. UK NOV-21 x
+> [ ] **PCD**. UK NOV-21 x
+> [ ] **PCT**. UK NOV-21 x
+> [ ] **PCA**. UK NOV-21 x
+   
+### ELECTORAL
+> [ ] **PCON**. UK  DEC-20 x
+> [ ] **WARD**. UK  DEC-20 x
+> [ ] **CED**.  ENG MAY-21 x
+   
+### URBAN
+- [X] **TTWA**. UK 2011
+- [X] **MTC**.  EW 2015
+- [X] **BUA**.  EW 2015
+- [X] **BUAS**. EW 2015
+   
+### SOCIAL
+> [ ] **PAR**. UK DEC-20 x
+> [ ] **PFN**. UK SEP-21 x
+> [ ] **PFA**. UK SEP-21 x
+> [ ] **FRA**. EW APR-21 x
+> [ ] **CSP**. EW DEC-20 x
+> [ ] **LPA**. UK MAY-21 x
+> [ ] **RGD**. EW DEC-20 x 
+> [ ] **LRF**. EW DEC-20 x
+ 
+### HEALTH
+> [ ] **CCG**.  UK  APR-21 x
+> [ ] **STP**.  ENG APR-21 x
+- [X] **NHSO**. ENG ...
+- [X] **NHSR**. ENG ...
+> [ ] **CIS**.  ENG DEC-20 x

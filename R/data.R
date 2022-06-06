@@ -1,7 +1,7 @@
 #' @import sf
 NULL
 
-#' OA.
+#' OA
 #'
 #' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
 #' for all 232,296 \emph{Output Areas} in the UK (\emph{Small Areas} in N.Ireland).
@@ -16,7 +16,7 @@ NULL
 #'
 'OA'
 
-#' WPZ.
+#' WPZ
 #'
 #' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) for all 60,709 \emph{Workplace Zones} in the UK.
 #'
@@ -30,10 +30,7 @@ NULL
 #'
 'WPZ'
 
-#' @import sf
-NULL
-
-#' LSOA.
+#' LSOA
 #'
 #' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
 #' for all 42,619 \emph{Lower Layer Super Output Areas} in the UK (\emph{Data Zones} in Scotland, \emph{Small Output Areas} in N.Ireland).
@@ -50,7 +47,7 @@ NULL
 #'
 'LSOA'
 
-#' MSOA.
+#' MSOA
 #'
 #' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
 #' for all 9,370 \emph{Middle Layer Super Output Areas} in Great Britain (\emph{Intermediate Zones} in Scotland).
@@ -67,12 +64,12 @@ NULL
 #'
 'MSOA'
 
-#' LAD.
+#' LAD
 #'
 #' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
 #' for all 379 \emph{Local Authorities & Districts} in the UK.
 #'
-#' Built by dissolving \code{MSOA} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/dmpkg.geouk} package.
+#' Built by dissolving \code{OA} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/dmpkg.geouk} package.
 #' 
 #' Last update: MAY-21.
 #' 
@@ -84,7 +81,7 @@ NULL
 #'
 'LAD'
 
-#' CTY.
+#' CTY
 #'
 #' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
 #' for all 90 \emph{Counties} (plus Local Authorities) in England (Scotland, N.Ireland, and Wales are present with a pseudo-code).
@@ -101,7 +98,7 @@ NULL
 #'
 'CTY'
 
-#' RGN.
+#' RGN
 #'
 #' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
 #' for all 9 \emph{Regions} in England (Scotland, N.Ireland, and Wales are present with a pseudo-code).
@@ -118,7 +115,7 @@ NULL
 #'
 'RGN'
 
-#' CTRY.
+#' CTRY
 #'
 #' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
 #' for all 4 \emph{Countries} in the UK.
@@ -135,14 +132,14 @@ NULL
 #'
 'CTRY'
 
-#' PCS.
+#' PCS
 #'
 #' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
 #' for all 9,538 (active and geographical) \emph{Postcode Sectors} in the UK.
 #'
 #' Built by dissolving \code{OA} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/dmpkg.geouk} package.
 #' 
-#' Last update: NOV-2021.
+#' Last update: FEB-2022.
 #' 
 #' @format A \code{sf} dataframe with only one \code{PCS} column for the corresponding \emph{Royal Mail} codes.
 #'
@@ -150,14 +147,14 @@ NULL
 #'
 'PCS'
 
-#' PCD.
+#' PCD
 #'
 #' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
 #' for all 2,815 (active and geographical) \emph{Postcode Districts} in the UK.
 #'
 #' Built by dissolving \code{PCS} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/dmpkg.geouk} package.
 #' 
-#' Last update: NOV-2021.
+#' Last update: FEB-2022.
 #' 
 #' @format A \code{sf} dataframe with only one \code{PCD} column for the corresponding \emph{Royal Mail} codes.
 #'
@@ -165,14 +162,14 @@ NULL
 #'
 'PCD'
 
-#' PCT.
+#' PCT
 #'
 #' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
 #' for all 1430 \emph{Post Towns} in the UK.
 #'
 #' Built by dissolving \code{PCD} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/dmpkg.geouk} package.
 #' 
-#' Last update: NOV-2021.
+#' Last update: FEB-2022.
 #' 
 #' @format A \code{sf} dataframe with only one \code{PCT} column.
 #'
@@ -180,14 +177,14 @@ NULL
 #'
 'PCT'
 
-#' PCA.
+#' PCA
 #'
 #' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
 #' for all 121 \emph{Postcode Area} in the UK.
 #'
 #' Built by dissolving \code{PCD} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/dmpkg.geouk} package.
 #' 
-#' Last update: NOV-2021.
+#' Last update: FEB-2022.
 #' 
 #' @format A \code{sf} dataframe with only one \code{PCA} column for the corresponding \emph{Royal Mail} codes.
 #'
@@ -195,7 +192,7 @@ NULL
 #'
 'PCA'
 
-#' PCON.
+#' PCON
 #'
 #' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
 #' for all 650 \emph{Westminster Parliamentary Constituency} in the UK.
@@ -212,7 +209,7 @@ NULL
 #'
 'PCON'
 
-#' WARD.
+#' WARD
 #'
 #' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
 #' for all 8,887 \emph{Electoral Ward} in the UK.
@@ -229,7 +226,7 @@ NULL
 #'
 'WARD'
 
-#' CED.
+#' CED
 #'
 #' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
 #' for all 1,717 \emph{County Electoral Divisions} in England.
@@ -246,7 +243,7 @@ NULL
 #'
 'CED'
 
-#' TTWA.
+#' TTWA
 #'
 #' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
 #' for all 228 \emph{Travel To Work Areas} in the UK.
@@ -263,7 +260,7 @@ NULL
 #'
 'TTWA'
 
-#' MTC.
+#' MTC
 #'
 #' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
 #' for all 113 \emph{Major Towns or Cities} in England And Wales.
@@ -280,7 +277,7 @@ NULL
 #'
 'MTC'
 
-#' BUA.
+#' BUA
 #'
 #' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
 #' for all 5,830 \emph{Built-up Areas} in the England And Wales.
@@ -297,7 +294,7 @@ NULL
 #'
 'BUA'
 
-#' BUAS.
+#' BUAS
 #'
 #' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
 #' for all 1,826 \emph{Built-up Areas Sub-divisions} in the England And Wales.
@@ -314,7 +311,7 @@ NULL
 #'
 'BUAS'
 
-#' PAR.
+#' PAR
 #'
 #' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
 #' for all 11,561 \emph{Civil Parishes and Unparished Communities} in Great Britain.
@@ -331,7 +328,126 @@ NULL
 #'
 'PAR'
 
-#' CCG.
+#' PFN
+#'
+#' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
+#' for all TBD \emph{Police Neighborhoods} in the UK.
+#'
+#' Built by dissolving \code{OA} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/dmpkg.geouk} package.
+#' 
+#' Last update: DEC-21.
+#' 
+#' @format A \code{sf} dataframe with only one \code{PFN} column for the corresponding \emph{ONS} codes.
+#'
+#' You can easily add data loading for example the \url{https://github.com/lvalnegri/dmpkg.datauk} package.
+#'
+#' For further details see \url{https://data.police.uk/data/boundaries/}.
+#'
+'PFN'
+
+#' PFA
+#'
+#' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
+#' for all 45 \emph{Police Force Areas} in the UK.
+#'
+#' Built by dissolving \code{PFN} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/dmpkg.geouk} package.
+#' 
+#' Last update: DEC-21.
+#' 
+#' @format A \code{sf} dataframe with only one \code{PFA} column for the corresponding \emph{ONS} codes.
+#'
+#' You can easily add data loading for example the \url{https://github.com/lvalnegri/dmpkg.datauk} package.
+#'
+#' For further details see \url{https://geoportal.statistics.gov.uk/search?collection=Dataset&sort=-modified&tags=all(BDY_PFA)}.
+#'
+'PFA'
+
+#' FRA
+#'
+#' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
+#' for all 79 \emph{Fire Rescue Authorities} in the UK.
+#'
+#' Built by dissolving \code{OA} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/dmpkg.geouk} package.
+#' 
+#' Last update: DEC-19.
+#' 
+#' @format A \code{sf} dataframe with only one \code{FRA} column for the corresponding \emph{ONS} codes.
+#'
+#' You can easily add data loading for example the \url{https://github.com/lvalnegri/dmpkg.datauk} package.
+#'
+#' For further details see \url{https://geoportal.statistics.gov.uk/search?collection=Dataset&sort=-modified&tags=all(BDY_FRA)}.
+#'
+'FRA'
+
+#' CSP
+#'
+#' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
+#' for all 314 \emph{Community Safety Partnerships} in the England And Wales.
+#'
+#' Built by dissolving \code{OA} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/dmpkg.geouk} package.
+#' 
+#' Last update: DEC-19.
+#' 
+#' @format A \code{sf} dataframe with only one \code{CSP} column for the corresponding \emph{ONS} codes.
+#'
+#' You can easily add data loading for example the \url{https://github.com/lvalnegri/dmpkg.datauk} package.
+#'
+#' For further details see \url{https://geoportal.statistics.gov.uk/search?collection=Dataset&sort=-modified&tags=all(BDY_CSP)}.
+#'
+'CSP'
+
+#' LPA
+#'
+#' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
+#' for all 398 \emph{Local Planning Authorities} in the UK.
+#'
+#' Built by dissolving \code{OA} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/dmpkg.geouk} package.
+#' 
+#' Last update: APR-20.
+#' 
+#' @format A \code{sf} dataframe with only one \code{LPA} column for the corresponding \emph{ONS} codes.
+#'
+#' You can easily add data loading for example the \url{https://github.com/lvalnegri/dmpkg.datauk} package.
+#'
+#' For further details see \url{https://geoportal.statistics.gov.uk/search?collection=Dataset&sort=-modified&tags=all(BDY_LPA)}.
+#'
+'LPA'
+
+#' RGD
+#'
+#' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
+#' for all 173 \emph{Registration Districts} in the England And Wales.
+#'
+#' Built by dissolving \code{OA} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/dmpkg.geouk} package.
+#' 
+#' Last update: APR-19.
+#' 
+#' @format A \code{sf} dataframe with only one \code{RGD} column for the corresponding \emph{ONS} codes.
+#'
+#' You can easily add data loading for example the \url{https://github.com/lvalnegri/dmpkg.datauk} package.
+#'
+#' For further details see \url{https://geoportal.statistics.gov.uk/search?collection=Dataset&sort=-modified&tags=all(BDY_RGD)}.
+#'
+'RGD'
+
+#' LRF
+#'
+#' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
+#' for all 42 \emph{Local Resilience Forums} in England And Wales.
+#'
+#' Built by dissolving \code{OA} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/dmpkg.geouk} package.
+#' 
+#' Last update: DEC-19.
+#' 
+#' @format A \code{sf} dataframe with only one \code{LRF} column for the corresponding \emph{ONS} codes.
+#'
+#' You can easily add data loading for example the \url{https://github.com/lvalnegri/dmpkg.datauk} package.
+#'
+#' For further details see \url{https://geoportal.statistics.gov.uk/search?collection=Dataset&sort=-modified&tags=all(BDY_LRF)}.
+#'
+'LRF'
+
+#' CCG
 #'
 #' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
 #' for all 142 \emph{Clinical Commissioning Groups} in the UK.
@@ -348,7 +464,7 @@ NULL
 #'
 'CCG'
 
-#' STP.
+#' STP
 #'
 #' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
 #' for all 42 \emph{Sustainability and Transformation Partnerships} in England.
@@ -365,24 +481,7 @@ NULL
 #'
 'STP'
 
-#' NHSO.
-#'
-#' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
-#' for all 14 \emph{NHS England Local Offices} in England.
-#'
-#' Built by dissolving \code{CCG} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/dmpkg.geouk} package.
-#' 
-#' Last update: MAY-21.
-#' 
-#' @format A \code{sf} dataframe with only one \code{NHSO} column for the corresponding \emph{ONS} codes.
-#'
-#' You can easily add data loading for example the \url{https://github.com/lvalnegri/dmpkg.datauk} package.
-#'
-#' For further details see \url{https://geoportal.statistics.gov.uk/search?collection=Dataset&sort=-modified&tags=all(BDY_NHSO)}.
-#'
-'NHSO'
-
-#' NHSR.
+#' NHSR
 #'
 #' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
 #' for all 7 \emph{NHS England Regions} in England.
@@ -398,3 +497,21 @@ NULL
 #' For further details see \url{https://geoportal.statistics.gov.uk/search?collection=Dataset&sort=-modified&tags=all(BDY_NHSR)}.
 #'
 'NHSR'
+
+#' CIS
+#'
+#' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
+#' for all 133 \emph{Covid Infection Survey Areas} in England.
+#'
+#' Built by dissolving \code{OA} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/dmpkg.geouk} package.
+#' 
+#' Last update: DEC-20.
+#' 
+#' @format A \code{sf} dataframe with only one \code{CIS} column for the corresponding \emph{ONS} codes.
+#'
+#' You can easily add data loading for example the \url{https://github.com/lvalnegri/dmpkg.datauk} package.
+#'
+#' For further details see \url{https://geoportal.statistics.gov.uk/search?collection=Dataset&sort=-modified&tags=all(BDY_CIS)}.
+#'
+'CIS'
+
