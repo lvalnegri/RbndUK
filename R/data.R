@@ -484,7 +484,7 @@ NULL
 #' NHSR
 #'
 #' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
-#' for all 7 \emph{NHS England Regions} in England.
+#' for the 7 \emph{NHS England Regions} in England.
 #'
 #' Built by dissolving \code{NHSO} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/dmpkg.geouk} package.
 #' 
@@ -498,10 +498,10 @@ NULL
 #'
 'NHSR'
 
-#' CIS
+#' CIS.
 #'
 #' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
-#' for all 133 \emph{Covid Infection Survey Areas} in England.
+#' for the 133 \emph{Covid Infection Survey Areas} in England.
 #'
 #' Built by dissolving \code{OA} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/dmpkg.geouk} package.
 #' 
@@ -514,4 +514,3 @@ NULL
 #' For further details see \url{https://geoportal.statistics.gov.uk/search?collection=Dataset&sort=-modified&tags=all(BDY_CIS)}.
 #'
 'CIS'
-
