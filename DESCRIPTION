@@ -1,6 +1,6 @@
-Package: dmpkg.bnduk
+Package: RbndUK
 Type: Package
-Date: 2022-03-01
+Date: 2022-07-01
 Title: Boundaries related to UK geographies
 Version: 0.2.0
 Authors@R: person("Luca", "Valnegri", email = "l.valnegri@datamaps.co.uk", role = c("aut", "cre"))
@@ -12,7 +12,7 @@ Imports:
     sf
 Suggests:
     leaflet,
-    dmpkg.geouk
+    RgeoUK
 LazyData: true
-URL: https://github.com/lvalnegri/dmpkg.bnduk
-RoxygenNote: 7.1.2
+URL: https://github.com/lvalnegri/RbndUK
+RoxygenNote: 7.2.0
