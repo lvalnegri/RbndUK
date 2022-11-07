@@ -2,7 +2,7 @@
 # UK GEOGRAPHY * 11 - Prepare UK file for OAs (Output Areas) #
 ##############################################################
 
-dmpkg.funs::load_pkgs(dmp = FALSE, 'sf')
+Rfuns::load_pkgs('sf')
 
 in_path <- file.path(ext_path, 'uk', 'geography', 'boundaries', 'OA')
 out_path <- file.path(bnduk_path, 'shp')

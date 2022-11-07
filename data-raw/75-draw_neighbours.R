@@ -1,21 +1,21 @@
+library(Rfuns)
+
 area_type <- 'OA'
 center_code <- 'E00000001'
 palette = 'Reds'
 neigh_order = 1
 pct = 10
 maptile = leaflet::providers$Stamen.TonerLite
-bnd_path = file.path(Sys.getenv('PUB_PATH'), 'boundaries', 'uk', 'rds')
-data_path = file.path(Sys.getenv('PUB_PATH'), 'datasets', 'uk', 'geography')
 
 # define functions
 get_dts <- function(
                 area_type,
                 center_code,
-                neigh_path = file.path(Sys.getenv('PUB_PATH'), 'datasets', 'uk', 'geography', 'neighbours')
+                npath = file.path(geouk_path, 'neighbours')
             ){
     
-        idx <- fst::read_fst(file.path(neigh_path, paste0(area_type, '.idx')), as.data.table = TRUE)
-        fst::read_fst(file.path(neigh_path, area_type), 
+        idx <- fst::read_fst(file.path(npath, paste0(area_type, '.idx')), as.data.table = TRUE)
+        fst::read_fst(file.path(npath, area_type), 
                 from = idx[location_id == center_code, n1], 
                 to = idx[location_id == center_code, n2], 
                 columns = c('neighbour_id'),
@@ -32,8 +32,8 @@ draw_neighbors <- function(
                     neigh_order = 1, 
                     maptile = leaflet::providers$Stamen.TonerLite,
                     palette = 'Reds', 
-                    bnd_path = file.path(Sys.getenv('PUB_PATH'), 'boundaries', 'uk', 'rds'),
-                    data_path = file.path(Sys.getenv('PUB_PATH'), 'datasets', 'uk', 'geography'),
+                    bpath = bnduk_spath,
+                    dpath = geouk_path,
                     pct = 10
     ){
         pkgs <- c('data.table', 'leaflet', 'leaflet.extras')
@@ -41,12 +41,12 @@ draw_neighbors <- function(
         
         dts <- get_neighs(area_type, center_code, neigh_order)
         area.lst <- c(center_code, dts$neighbour_id)
-        bnd <- readRDS(file.path(bnd_path, paste0('s', pct), area_type))
+        bnd <- readRDS(file.path(bpath, paste0('s', pct), area_type))
         bnd <- subset(bnd, bnd$id %in% area.lst)
         if(area_type %in% c('OA', 'WPZ')){
             lcn <- data.table(location_id = area.lst, name = area.lst, lbl = area.lst)
         } else {
-            lcn <- fst::read_fst(file.path(data_path, 'locations'), columns = c('type', 'location_id', 'name'), as.data.table = TRUE)
+            lcn <- fst::read_fst(file.path(dpath, 'locations'), columns = c('type', 'location_id', 'name'), as.data.table = TRUE)
             lcn <- lcn[
                 type == area_type & location_id %in% area.lst, 
                 .(location_id, name, lbl = paste0(name, ' (', location_id, ')'))
