@@ -3,22 +3,22 @@
 \docType{data}
 \name{PCS}
 \alias{PCS}
-\title{PCS.}
+\title{PCS}
 \format{
-A \code{sf} dataframe with only one \code{PCS} column for the corresponding \emph{Royal Mail} codes.
+A `sf` dataframe with only one `PCS` column for the corresponding *Royal Mail* codes.
 
-You can easily add data loading for example the \url{https://github.com/lvalnegri/dmpkg.datauk} package.
+You can easily add data loading for example the \url{https://github.com/lvalnegri/RdataUK} package.
 }
 \usage{
 PCS
 }
 \description{
-Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
-for all 9,538 (active and geographical) \emph{Postcode Sectors} in the UK.
+Digital Vector Boundaries in `sf` format and *WGS84* CRS (*epsg* 4326) 
+for all 9,538 (active and geographical) *Postcode Sectors* in the UK.
 }
 \details{
-Built by dissolving \code{OA} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/dmpkg.geouk} package.
+Built by dissolving `OA` boundaries using the `output_areas` lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
 
-Last update: NOV-2021.
+Last update: FEB-2022.
 }
 \keyword{datasets}

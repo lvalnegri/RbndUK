@@ -3,11 +3,11 @@
 \docType{data}
 \name{PAR}
 \alias{PAR}
-\title{PAR.}
+\title{PAR}
 \format{
-A \code{sf} dataframe with only one \code{PAR} column for the corresponding \emph{ONS} codes.
+A `sf` dataframe with only one `PAR` column for the corresponding *ONS* codes.
 
-You can easily add data loading for example the \url{https://github.com/lvalnegri/dmpkg.datauk} package.
+You can easily add data loading for example the \url{https://github.com/lvalnegri/RdataUK} package.
 
 For further details see \url{https://geoportal.statistics.gov.uk/search?collection=Dataset&sort=-modified&tags=all(BDY_PAR)}.
 }
@@ -15,11 +15,11 @@ For further details see \url{https://geoportal.statistics.gov.uk/search?collecti
 PAR
 }
 \description{
-Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
-for all 11,561 \emph{Civil Parishes and Unparished Communities} in Great Britain.
+Digital Vector Boundaries in `sf` format and *WGS84* CRS (*epsg* 4326) 
+for all 11,561 *Civil Parishes and Unparished Communities* in Great Britain.
 }
 \details{
-Built by dissolving \code{OA} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/dmpkg.geouk} package.
+Built by dissolving `OA` boundaries using the `output_areas` lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
 
 Last update: .
 }

@@ -3,17 +3,21 @@
 \docType{data}
 \name{WPZ}
 \alias{WPZ}
-\title{WPZ.}
+\title{WPZ}
 \format{
+A `sf` dataframe with only one `WPZ` column for the corresponding *ONS* codes.
 
+You can easily add data easily loading for example the \url{https://github.com/lvalnegri/RdataUK} package.
+
+For further details see the [ONS Open Geography Portal](https://geoportal.statistics.gov.uk/search?collection=Dataset&sort=name&tags=all(BDY_WZ%2CDEC_2011)].
 }
 \usage{
 WPZ
 }
 \description{
-Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) for all 60,709 \emph{Workplace Zones} in the UK.
+Digital Vector Boundaries in `sf` format and *WGS84* CRS (*epsg* 4326) for all 60,709 *Workplace Zones* in the UK.
 }
 \details{
-Last update: 2011 (this is a \emph{frozen} entity).
+Last update: 2011 (this is a *frozen* entity).
 }
 \keyword{datasets}

@@ -3,11 +3,11 @@
 \docType{data}
 \name{RGN}
 \alias{RGN}
-\title{RGN.}
+\title{RGN}
 \format{
-A \code{sf} dataframe with only one \code{RGN} column for the corresponding \emph{ONS} codes.
+A `sf` dataframe with only one `RGN` column for the corresponding *ONS* codes.
 
-You can easily add data loading for example the \url{https://github.com/lvalnegri/dmpkg.datauk} package.
+You can easily add data loading for example the \url{https://github.com/lvalnegri/RdataUK} package.
 
 For further details see \url{https://geoportal.statistics.gov.uk/search?collection=Dataset&sort=-modified&tags=all(BDY_RGN)}.
 }
@@ -15,12 +15,12 @@ For further details see \url{https://geoportal.statistics.gov.uk/search?collecti
 RGN
 }
 \description{
-Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
-for all 9 \emph{Regions} in England (Scotland, N.Ireland, and Wales are present with a pseudo-code).
+Digital Vector Boundaries in `sf` format and *WGS84* CRS (*epsg* 4326) 
+for all 9 *Regions* in England (Scotland, N.Ireland, and Wales are present with a pseudo-code).
 }
 \details{
-Built by dissolving \code{LAD} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/dmpkg.geouk} package.
+Built by dissolving `LAD` boundaries using the `output_areas` lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
 
-Last update: 2011 (this is a \emph{frozen} entity).
+Last update: 2011 (this is a *frozen* entity).
 }
 \keyword{datasets}

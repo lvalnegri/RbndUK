@@ -3,11 +3,11 @@
 \docType{data}
 \name{CCG}
 \alias{CCG}
-\title{CCG.}
+\title{CCG}
 \format{
-A \code{sf} dataframe with only one \code{CCG} column for the corresponding \emph{ONS} codes.
+A `sf` dataframe with only one `CCG` column for the corresponding *ONS* codes.
 
-You can easily add data loading for example the \url{https://github.com/lvalnegri/dmpkg.datauk} package.
+You can easily add data loading for example the \url{https://github.com/lvalnegri/RdataUK} package.
 
 For further details see \url{https://geoportal.statistics.gov.uk/search?collection=Dataset&sort=-modified&tags=all(BDY_CCG)}.
 }
@@ -15,11 +15,11 @@ For further details see \url{https://geoportal.statistics.gov.uk/search?collecti
 CCG
 }
 \description{
-Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
-for all 142 \emph{Clinical Commissioning Groups} in the UK.
+Digital Vector Boundaries in `sf` format and *WGS84* CRS (*epsg* 4326) 
+for all 142 *Clinical Commissioning Groups* in the UK.
 }
 \details{
-Built by dissolving \code{LSOA} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/dmpkg.geouk} package.
+Built by dissolving `LSOA` boundaries using the `output_areas` lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
 
 Last update: MAY-21.
 }

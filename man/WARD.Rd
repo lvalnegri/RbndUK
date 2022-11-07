@@ -3,11 +3,11 @@
 \docType{data}
 \name{WARD}
 \alias{WARD}
-\title{WARD.}
+\title{WARD}
 \format{
-A \code{sf} dataframe with only one \code{WARD} column for the corresponding \emph{ONS} codes.
+A `sf` dataframe with only one `WARD` column for the corresponding *ONS* codes.
 
-You can easily add data loading for example the \url{https://github.com/lvalnegri/dmpkg.datauk} package.
+You can easily add data loading for example the \url{https://github.com/lvalnegri/RdataUK} package.
 
 For further details see \url{https://geoportal.statistics.gov.uk/search?collection=Dataset&sort=-modified&tags=all(BDY_WARD)}.
 }
@@ -15,11 +15,11 @@ For further details see \url{https://geoportal.statistics.gov.uk/search?collecti
 WARD
 }
 \description{
-Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
-for all 8,887 \emph{Electoral Ward} in the UK.
+Digital Vector Boundaries in `sf` format and *WGS84* CRS (*epsg* 4326) 
+for all 8,887 *Electoral Ward* in the UK.
 }
 \details{
-Built by dissolving \code{OA} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/dmpkg.geouk} package.
+Built by dissolving `OA` boundaries using the `output_areas` lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
 
 Last update: DEC-20.
 }

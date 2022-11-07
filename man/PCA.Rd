@@ -3,22 +3,22 @@
 \docType{data}
 \name{PCA}
 \alias{PCA}
-\title{PCA.}
+\title{PCA}
 \format{
-A \code{sf} dataframe with only one \code{PCA} column for the corresponding \emph{Royal Mail} codes.
+A `sf` dataframe with only one `PCA` column for the corresponding *Royal Mail* codes.
 
-You can easily add data loading for example the \url{https://github.com/lvalnegri/dmpkg.datauk} package.
+You can easily add data loading for example the \url{https://github.com/lvalnegri/RdataUK} package.
 }
 \usage{
 PCA
 }
 \description{
-Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
-for all 121 \emph{Postcode Area} in the UK.
+Digital Vector Boundaries in `sf` format and *WGS84* CRS (*epsg* 4326) 
+for all 121 *Postcode Area* in the UK.
 }
 \details{
-Built by dissolving \code{PCD} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/dmpkg.geouk} package.
+Built by dissolving `PCD` boundaries using the `output_areas` lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
 
-Last update: NOV-2021.
+Last update: FEB-2022.
 }
 \keyword{datasets}

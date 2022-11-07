@@ -3,22 +3,22 @@
 \docType{data}
 \name{PCD}
 \alias{PCD}
-\title{PCD.}
+\title{PCD}
 \format{
-A \code{sf} dataframe with only one \code{PCD} column for the corresponding \emph{Royal Mail} codes.
+A `sf` dataframe with only one `PCD` column for the corresponding *Royal Mail* codes.
 
-You can easily add data loading for example the \url{https://github.com/lvalnegri/dmpkg.datauk} package.
+You can easily add data loading for example the \url{https://github.com/lvalnegri/RdataUK} package.
 }
 \usage{
 PCD
 }
 \description{
-Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
-for all 2,815 (active and geographical) \emph{Postcode Districts} in the UK.
+Digital Vector Boundaries in `sf` format and *WGS84* CRS (*epsg* 4326) 
+for all 2,815 (active and geographical) *Postcode Districts* in the UK.
 }
 \details{
-Built by dissolving \code{PCS} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/dmpkg.geouk} package.
+Built by dissolving `PCS` boundaries using the `output_areas` lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
 
-Last update: NOV-2021.
+Last update: FEB-2022.
 }
 \keyword{datasets}

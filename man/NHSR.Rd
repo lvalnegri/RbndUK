@@ -3,11 +3,11 @@
 \docType{data}
 \name{NHSR}
 \alias{NHSR}
-\title{NHSR.}
+\title{NHSR}
 \format{
-A \code{sf} dataframe with only one \code{NHSR} column for the corresponding \emph{ONS} codes.
+A `sf` dataframe with only one `NHSR` column for the corresponding *ONS* codes.
 
-You can easily add data loading for example the \url{https://github.com/lvalnegri/dmpkg.datauk} package.
+You can easily add data loading for example the \url{https://github.com/lvalnegri/RdataUK} package.
 
 For further details see \url{https://geoportal.statistics.gov.uk/search?collection=Dataset&sort=-modified&tags=all(BDY_NHSR)}.
 }
@@ -15,11 +15,11 @@ For further details see \url{https://geoportal.statistics.gov.uk/search?collecti
 NHSR
 }
 \description{
-Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
-for all 7 \emph{NHS England Regions} in England.
+Digital Vector Boundaries in `sf` format and *WGS84* CRS (*epsg* 4326) 
+for the 7 *NHS England Regions* in England.
 }
 \details{
-Built by dissolving \code{NHSO} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/dmpkg.geouk} package.
+Built by dissolving `NHSO` boundaries using the `output_areas` lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
 
 Last update: MAY-21.
 }
