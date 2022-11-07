@@ -1,16 +1,55 @@
 #' @import sf
 NULL
 
-# OA - Output Areas (EWSN) --------------------------------
+# N E W   C E N S U S  2 0 2 1 --------------------------------------
+# 
+# OA - Output Areas Census 2021 (EW) ---------------------------
+#
+#' OA21
+#'
+#' Digital Vector Boundaries in `sf` format and *WGS84* CRS (*epsg* 4326) 
+#' for all 188,880 *Output Areas* in England and Wales.
+#'
+#' @format A `sf` dataframe with only one `OA21` column for the corresponding *ONS* codes.
+#'
+'OA21'
+
+# LSOA - Lower Layer Super Output Areas Census 2021 (EW) -------
+#
+#' LSOA21
+#'
+#' Digital Vector Boundaries in `sf` format and *WGS84* CRS (*epsg* 4326) 
+#' for all 35,672 *Lower Layer Super Output Areas* in England and Wales.
+#'
+#' @format A `sf` dataframe with only one `LSOA21` column for the corresponding *ONS* codes.
+#'
+'LSOA21'
+
+# MSOA - Medium Layer Super Output Areas Census 2021 (EW) -------
+#
+#' MSOA21
+#'
+#' Digital Vector Boundaries in `sf` format and *WGS84* CRS (*epsg* 4326) 
+#' for all 7,264 *Medium Layer Super Output Areas* in England and Wales.
+#'
+#' @format A `sf` dataframe with only one `MSOA21` column for the corresponding *ONS* codes.
+#'
+'MSOA21'
+
+#####################################################################
+ 
+# o l d   C E N S U S  2 0 1 1 --------------------------------------
+# 
+# OA - Output Areas Census 2011 (EWSN) --------------------
 #
 #' OA
 #'
-#' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
-#' for all 232,296 \emph{Output Areas} in the UK (\emph{Small Areas} in N.Ireland).
+#' Digital Vector Boundaries in `sf` format and *WGS84* CRS (*epsg* 4326) 
+#' for all 232,296 *Output Areas* in the UK (*Small Areas* in N.Ireland).
 #'
-#' Last update: 2011 (this is a \emph{frozen} entity).
+#' Last update: 2011 (this is a *frozen* entity).
 #' 
-#' @format A \code{sf} dataframe with only one \code{OA} column for the corresponding \emph{ONS} codes.
+#' @format A `sf` dataframe with only one `OA` column for the corresponding *ONS* codes.
 #'
 #' You can easily add data loading for example the \url{https://github.com/lvalnegri/RdataUK} package.
 #'
@@ -18,34 +57,34 @@ NULL
 #'
 'OA'
 
-# WPZ - WorkPlace Zones (EWSN) ----------------------------
+# WPZ - WorkPlace Zones Census 2011 (EWSN) ----------------------------
 #
 #' WPZ
 #'
-#' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) for all 60,709 \emph{Workplace Zones} in the UK.
+#' Digital Vector Boundaries in `sf` format and *WGS84* CRS (*epsg* 4326) for all 60,709 *Workplace Zones* in the UK.
 #'
-#' Last update: 2011 (this is a \emph{frozen} entity).
-#' 
-#' @format A \code{sf} dataframe with only one \code{WPZ} column for the corresponding \emph{ONS} codes.
+#' Last update: 2011 (this is a *frozen* entity).
+#'
+#' @format A `sf` dataframe with only one `WPZ` column for the corresponding *ONS* codes.
 #'
 #' You can easily add data easily loading for example the \url{https://github.com/lvalnegri/RdataUK} package.
 #'
-#' For further details see \url{https://geoportal.statistics.gov.uk/search?collection=Dataset&sort=name&tags=all(BDY_WZ%2CDEC_2011)}.
+#' For further details see the [ONS Open Geography Portal](https://geoportal.statistics.gov.uk/search?collection=Dataset&sort=name&tags=all(BDY_WZ%2CDEC_2011)].
 #'
 'WPZ'
 
-# LSOA - Lower Layer Super Output Areas (EWSN) ------------
+# LSOA - Lower Layer Super Output Areas Census 2011 (EWSN) ------------
 #
 #' LSOA
 #'
-#' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
-#' for all 42,619 \emph{Lower Layer Super Output Areas} in the UK (\emph{Data Zones} in Scotland, \emph{Small Output Areas} in N.Ireland).
+#' Digital Vector Boundaries in `sf` format and *WGS84* CRS (*epsg* 4326) 
+#' for all 42,619 *Lower Layer Super Output Areas` in the UK (*Data Zones* in Scotland, *Small Output Areas* in N.Ireland).
 #'
-#' Built by dissolving \code{OA} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
+#' Built by dissolving `OA` boundaries using the *output_areas* lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
 #'
-#' Last update: 2011 (this is a \emph{frozen} entity).
+#' Last update: 2011 (this is a *frozen* entity).
 #' 
-#' @format A \code{sf} dataframe with only one \code{LSOA} column for the corresponding \emph{ONS} codes.
+#' @format A `sf` dataframe with only one `LSOA` column for the corresponding *ONS* codes.
 #'
 #' You can easily add data loading for example the \url{https://github.com/lvalnegri/RdataUK} package.
 #'
@@ -53,18 +92,18 @@ NULL
 #'
 'LSOA'
 
-# MSOA - Medium Layer Super Output Areas (EWS) ------------
+# MSOA - Medium Layer Super Output Areas Census 2011 (EWS) ------------
 #
 #' MSOA
 #'
-#' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
-#' for all 9,370 \emph{Middle Layer Super Output Areas} in Great Britain (\emph{Intermediate Zones} in Scotland).
+#' Digital Vector Boundaries in `sf` format and *WGS84* CRS (*epsg* 4326) 
+#' for all 9,370 *Middle Layer Super Output Areas* in Great Britain (*Intermediate Zones* in Scotland).
 #'
-#' Built by dissolving \code{LSOA} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
+#' Built by dissolving `LSOA` boundaries using the `output_areas` lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
 #' 
-#' Last update: 2011 (this is a \emph{frozen} entity).
+#' Last update: 2011 (this is a *frozen* entity).
 #' 
-#' @format A \code{sf} dataframe with only one \code{MSOA} column for the corresponding \emph{ONS} codes.
+#' @format A `sf` dataframe with only one `MSOA` column for the corresponding *ONS* codes.
 #'
 #' You can easily add data loading for example the \url{https://github.com/lvalnegri/RdataUK} package.
 #'
@@ -76,14 +115,14 @@ NULL
 #
 #' LAD
 #'
-#' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
-#' for all 379 \emph{Local Authorities & Districts} in the UK.
+#' Digital Vector Boundaries in `sf` format and *WGS84* CRS (*epsg* 4326) 
+#' for all 379 *Local Authorities & Districts* in the UK.
 #'
-#' Built by dissolving \code{OA} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
+#' Built by dissolving `OA` boundaries using the `output_areas` lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
 #' 
 #' Last update: MAY-21.
 #' 
-#' @format A \code{sf} dataframe with only one \code{LAD} column for the corresponding \emph{ONS} codes.
+#' @format A `sf` dataframe with only one `LAD` column for the corresponding *ONS* codes.
 #'
 #' You can easily add data loading for example the \url{https://github.com/lvalnegri/RdataUK} package.
 #'
@@ -95,14 +134,14 @@ NULL
 #
 #' CTY
 #'
-#' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
-#' for all 90 \emph{Counties} (plus Local Authorities) in England (Scotland, N.Ireland, and Wales are present with a pseudo-code).
+#' Digital Vector Boundaries in `sf` format and *WGS84* CRS (*epsg* 4326) 
+#' for all 90 *Counties* (plus *Local Authorities*) in England (Scotland, N.Ireland, and Wales are present with a pseudo-code).
 #'
-#' Built by dissolving \code{LAD} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
+#' Built by dissolving `LAD` boundaries using the `output_areas` lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
 #' 
 #' Last update: MAY-21.
 #' 
-#' @format A \code{sf} dataframe with only one \code{CTY} column for the corresponding \emph{ONS} codes.
+#' @format A `sf` dataframe with only one `CTY` column for the corresponding *ONS* codes.
 #'
 #' You can easily add data loading for example the \url{https://github.com/lvalnegri/RdataUK} package.
 #'
@@ -114,14 +153,14 @@ NULL
 #
 #' RGN
 #'
-#' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
-#' for all 9 \emph{Regions} in England (Scotland, N.Ireland, and Wales are present with a pseudo-code).
+#' Digital Vector Boundaries in `sf` format and *WGS84* CRS (*epsg* 4326) 
+#' for all 9 *Regions* in England (Scotland, N.Ireland, and Wales are present with a pseudo-code).
 #'
-#' Built by dissolving \code{LAD} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
+#' Built by dissolving `LAD` boundaries using the `output_areas` lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
 #' 
-#' Last update: 2011 (this is a \emph{frozen} entity).
+#' Last update: 2011 (this is a *frozen* entity).
 #' 
-#' @format A \code{sf} dataframe with only one \code{RGN} column for the corresponding \emph{ONS} codes.
+#' @format A `sf` dataframe with only one `RGN` column for the corresponding *ONS* codes.
 #'
 #' You can easily add data loading for example the \url{https://github.com/lvalnegri/RdataUK} package.
 #'
@@ -133,14 +172,14 @@ NULL
 #
 #' CTRY
 #'
-#' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
-#' for all 4 \emph{Countries} in the UK.
+#' Digital Vector Boundaries in `sf` format and *WGS84* CRS (*epsg* 4326) 
+#' for all 4 *Countries* in the UK.
 #'
-#' Built by dissolving \code{LAD} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
+#' Built by dissolving `LAD` boundaries using the `output_areas` lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
 #' 
-#' Last update: 2011 (this is a \emph{frozen} entity).
+#' Last update: 2011 (this is a *frozen* entity).
 #' 
-#' @format A \code{sf} dataframe with only one \code{CTRY} column for the corresponding \emph{ONS} codes.
+#' @format A `sf` dataframe with only one `CTRY` column for the corresponding *ONS* codes.
 #'
 #' You can easily add data loading for example the \url{https://github.com/lvalnegri/RdataUK} package.
 #'
@@ -152,14 +191,14 @@ NULL
 #
 #' PCS
 #'
-#' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
-#' for all 9,538 (active and geographical) \emph{Postcode Sectors} in the UK.
+#' Digital Vector Boundaries in `sf` format and *WGS84* CRS (*epsg* 4326) 
+#' for all 9,538 (active and geographical) *Postcode Sectors* in the UK.
 #'
-#' Built by dissolving \code{OA} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
+#' Built by dissolving `OA` boundaries using the `output_areas` lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
 #' 
 #' Last update: FEB-2022.
 #' 
-#' @format A \code{sf} dataframe with only one \code{PCS} column for the corresponding \emph{Royal Mail} codes.
+#' @format A `sf` dataframe with only one `PCS` column for the corresponding *Royal Mail* codes.
 #'
 #' You can easily add data loading for example the \url{https://github.com/lvalnegri/RdataUK} package.
 #'
@@ -169,14 +208,14 @@ NULL
 #
 #' PCD
 #'
-#' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
-#' for all 2,815 (active and geographical) \emph{Postcode Districts} in the UK.
+#' Digital Vector Boundaries in `sf` format and *WGS84* CRS (*epsg* 4326) 
+#' for all 2,815 (active and geographical) *Postcode Districts* in the UK.
 #'
-#' Built by dissolving \code{PCS} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
+#' Built by dissolving `PCS` boundaries using the `output_areas` lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
 #' 
 #' Last update: FEB-2022.
 #' 
-#' @format A \code{sf} dataframe with only one \code{PCD} column for the corresponding \emph{Royal Mail} codes.
+#' @format A `sf` dataframe with only one `PCD` column for the corresponding *Royal Mail* codes.
 #'
 #' You can easily add data loading for example the \url{https://github.com/lvalnegri/RdataUK} package.
 #'
@@ -186,14 +225,13 @@ NULL
 #
 #' PCT
 #'
-#' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
-#' for all 1430 \emph{Post Towns} in the UK.
+#' Digital Vector Boundaries in `sf` format and *WGS84* CRS (*epsg* 4326) for all 1430 *Post Towns* in the UK.
 #'
-#' Built by dissolving \code{PCD} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
+#' Built by dissolving `PCD` boundaries using the `output_areas` lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
 #' 
 #' Last update: FEB-2022.
 #' 
-#' @format A \code{sf} dataframe with only one \code{PCT} column.
+#' @format A `sf` dataframe with only one `PCT` column.
 #'
 #' You can easily add data loading for example the \url{https://github.com/lvalnegri/RdataUK} package.
 #'
@@ -203,14 +241,14 @@ NULL
 #
 #' PCA
 #'
-#' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
-#' for all 121 \emph{Postcode Area} in the UK.
+#' Digital Vector Boundaries in `sf` format and *WGS84* CRS (*epsg* 4326) 
+#' for all 121 *Postcode Area* in the UK.
 #'
-#' Built by dissolving \code{PCD} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
+#' Built by dissolving `PCD` boundaries using the `output_areas` lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
 #' 
 #' Last update: FEB-2022.
 #' 
-#' @format A \code{sf} dataframe with only one \code{PCA} column for the corresponding \emph{Royal Mail} codes.
+#' @format A `sf` dataframe with only one `PCA` column for the corresponding *Royal Mail* codes.
 #'
 #' You can easily add data loading for example the \url{https://github.com/lvalnegri/RdataUK} package.
 #'
@@ -220,14 +258,14 @@ NULL
 #
 #' PCON
 #'
-#' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
-#' for all 650 \emph{Westminster Parliamentary Constituency} in the UK.
+#' Digital Vector Boundaries in `sf` format and *WGS84* CRS (*epsg* 4326) 
+#' for all 650 *Westminster Parliamentary Constituency* in the UK.
 #'
-#' Built by dissolving \code{OA} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
+#' Built by dissolving `OA` boundaries using the `output_areas` lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
 #' 
 #' Last update: DEC-20.
 #' 
-#' @format A \code{sf} dataframe with only one \code{PCON} column for the corresponding \emph{ONS} codes.
+#' @format A `sf` dataframe with only one `PCON` column for the corresponding *ONS* codes.
 #'
 #' You can easily add data loading for example the \url{https://github.com/lvalnegri/RdataUK} package.
 #'
@@ -239,14 +277,14 @@ NULL
 #
 #' WARD
 #'
-#' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
-#' for all 8,887 \emph{Electoral Ward} in the UK.
+#' Digital Vector Boundaries in `sf` format and *WGS84* CRS (*epsg* 4326) 
+#' for all 8,887 *Electoral Ward* in the UK.
 #'
-#' Built by dissolving \code{OA} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
+#' Built by dissolving `OA` boundaries using the `output_areas` lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
 #' 
 #' Last update: DEC-20.
 #' 
-#' @format A \code{sf} dataframe with only one \code{WARD} column for the corresponding \emph{ONS} codes.
+#' @format A `sf` dataframe with only one `WARD` column for the corresponding *ONS* codes.
 #'
 #' You can easily add data loading for example the \url{https://github.com/lvalnegri/RdataUK} package.
 #'
@@ -258,14 +296,14 @@ NULL
 #
 #' CED
 #'
-#' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
-#' for all 1,717 \emph{County Electoral Divisions} in England.
+#' Digital Vector Boundaries in `sf` format and *WGS84* CRS (*epsg* 4326) 
+#' for all 1,717 *County Electoral Divisions* in England.
 #'
-#' Built by dissolving \code{OA} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
+#' Built by dissolving `OA` boundaries using the `output_areas` lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
 #' 
 #' Last update: MAY-21.
 #' 
-#' @format A \code{sf} dataframe with only one \code{CED} column for the corresponding \emph{ONS} codes.
+#' @format A `sf` dataframe with only one `CED` column for the corresponding *ONS* codes.
 #'
 #' You can easily add data loading for example the \url{https://github.com/lvalnegri/RdataUK} package.
 #'
@@ -277,14 +315,14 @@ NULL
 #
 #' TTWA
 #'
-#' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
-#' for all 228 \emph{Travel To Work Areas} in the UK.
+#' Digital Vector Boundaries in `sf` format and *WGS84* CRS (*epsg* 4326) 
+#' for all 228 *Travel To Work Areas* in the UK.
 #'
-#' Built by dissolving \code{LSOA} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
+#' Built by dissolving `LSOA` boundaries using the `output_areas` lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
 #' 
-#' Last update: 2011 (this is a \emph{frozen} entity).
+#' Last update: 2011 (this is a *frozen* entity).
 #' 
-#' @format A \code{sf} dataframe with only one \code{TTWA} column for the corresponding \emph{ONS} codes.
+#' @format A `sf` dataframe with only one `TTWA` column for the corresponding *ONS* codes.
 #'
 #' You can easily add data loading for example the \url{https://github.com/lvalnegri/RdataUK} package.
 #'
@@ -296,14 +334,14 @@ NULL
 #
 #' MTC
 #'
-#' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
-#' for all 113 \emph{Major Towns or Cities} in England And Wales.
+#' Digital Vector Boundaries in `sf` format and *WGS84* CRS (*epsg* 4326) 
+#' for all 113 *Major Towns or Cities* in England And Wales.
 #'
-#' Built by dissolving \code{OA} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
+#' Built by dissolving `OA` boundaries using the `output_areas` lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
 #' 
-#' Last update: 2015 (this is a \emph{frozen} entity).
+#' Last update: 2015 (this is a *frozen* entity).
 #' 
-#' @format A \code{sf} dataframe with only one \code{MTC} column for the corresponding \emph{ONS} codes.
+#' @format A `sf` dataframe with only one `MTC` column for the corresponding *ONS* codes.
 #'
 #' You can easily add data loading for example the \url{https://github.com/lvalnegri/RdataUK} package.
 #'
@@ -315,14 +353,14 @@ NULL
 #
 #' BUA
 #'
-#' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
-#' for all 5,830 \emph{Built-up Areas} in the England And Wales.
+#' Digital Vector Boundaries in `sf` format and *WGS84* CRS (*epsg* 4326) 
+#' for all 5,830 *Built-up Areas* in the England And Wales.
 #'
-#' Built by dissolving \code{OA} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
+#' Built by dissolving `OA` boundaries using the `output_areas` lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
 #' 
-#' Last update: 2015 (this is a \emph{frozen} entity).
+#' Last update: 2015 (this is a *frozen* entity).
 #' 
-#' @format A \code{sf} dataframe with only one \code{BUA} column for the corresponding \emph{ONS} codes.
+#' @format A `sf` dataframe with only one `BUA` column for the corresponding *ONS* codes.
 #'
 #' You can easily add data loading for example the \url{https://github.com/lvalnegri/RdataUK} package.
 #'
@@ -334,14 +372,14 @@ NULL
 #
 #' BUAS
 #'
-#' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
-#' for all 1,826 \emph{Built-up Areas Sub-divisions} in the England And Wales.
+#' Digital Vector Boundaries in `sf` format and *WGS84* CRS (*epsg* 4326) 
+#' for all 1,826 *Built-up Areas Sub-divisions* in the England And Wales.
 #'
-#' Built by dissolving \code{OA} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
+#' Built by dissolving `OA` boundaries using the `output_areas` lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
 #' 
-#' Last update: 2015 (this is a \emph{frozen} entity).
+#' Last update: 2015 (this is a *frozen* entity).
 #' 
-#' @format A \code{sf} dataframe with only one \code{BUAS} column for the corresponding \emph{ONS} codes.
+#' @format A `sf` dataframe with only one `BUAS` column for the corresponding *ONS* codes.
 #'
 #' You can easily add data loading for example the \url{https://github.com/lvalnegri/RdataUK} package.
 #'
@@ -353,14 +391,14 @@ NULL
 #
 #' PAR
 #'
-#' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
-#' for all 11,561 \emph{Civil Parishes and Unparished Communities} in Great Britain.
+#' Digital Vector Boundaries in `sf` format and *WGS84* CRS (*epsg* 4326) 
+#' for all 11,561 *Civil Parishes and Unparished Communities* in Great Britain.
 #'
-#' Built by dissolving \code{OA} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
+#' Built by dissolving `OA` boundaries using the `output_areas` lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
 #' 
 #' Last update: .
 #' 
-#' @format A \code{sf} dataframe with only one \code{PAR} column for the corresponding \emph{ONS} codes.
+#' @format A `sf` dataframe with only one `PAR` column for the corresponding *ONS* codes.
 #'
 #' You can easily add data loading for example the \url{https://github.com/lvalnegri/RdataUK} package.
 #'
@@ -372,14 +410,14 @@ NULL
 #
 #' PFN
 #'
-#' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
-#' for all TBD \emph{Police Neighborhoods} in the UK.
+#' Digital Vector Boundaries in `sf` format and *WGS84* CRS (*epsg* 4326) 
+#' for all TBD *Police Neighbourhoods* in the UK.
 #'
-#' Built by dissolving \code{OA} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
+#' Built by dissolving `OA` boundaries using the `output_areas` lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
 #' 
 #' Last update: DEC-21.
 #' 
-#' @format A \code{sf} dataframe with only one \code{PFN} column for the corresponding \emph{ONS} codes.
+#' @format A `sf` dataframe with only one `PFN` column for the corresponding *ONS* codes.
 #'
 #' You can easily add data loading for example the \url{https://github.com/lvalnegri/RdataUK} package.
 #'
@@ -391,14 +429,14 @@ NULL
 #
 #' PFA
 #'
-#' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
-#' for all 45 \emph{Police Force Areas} in the UK.
+#' Digital Vector Boundaries in `sf` format and *WGS84* CRS (*epsg* 4326) 
+#' for all 45 *Police Force Areas* in the UK.
 #'
-#' Built by dissolving \code{PFN} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
+#' Built by dissolving `PFN` boundaries using the `output_areas` lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
 #' 
 #' Last update: DEC-21.
 #' 
-#' @format A \code{sf} dataframe with only one \code{PFA} column for the corresponding \emph{ONS} codes.
+#' @format A `sf` dataframe with only one `PFA` column for the corresponding *ONS* codes.
 #'
 #' You can easily add data loading for example the \url{https://github.com/lvalnegri/RdataUK} package.
 #'
@@ -410,14 +448,14 @@ NULL
 #
 #' FRA
 #'
-#' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
-#' for all 79 \emph{Fire Rescue Authorities} in the UK.
+#' Digital Vector Boundaries in `sf` format and *WGS84* CRS (*epsg* 4326) 
+#' for all 79 *Fire Rescue Authorities* in the UK.
 #'
-#' Built by dissolving \code{OA} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
+#' Built by dissolving `OA` boundaries using the `output_areas` lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
 #' 
 #' Last update: DEC-19.
 #' 
-#' @format A \code{sf} dataframe with only one \code{FRA} column for the corresponding \emph{ONS} codes.
+#' @format A `sf` dataframe with only one `FRA` column for the corresponding *ONS* codes.
 #'
 #' You can easily add data loading for example the \url{https://github.com/lvalnegri/RdataUK} package.
 #'
@@ -429,14 +467,14 @@ NULL
 #
 #' CSP
 #'
-#' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
-#' for all 314 \emph{Community Safety Partnerships} in the England And Wales.
+#' Digital Vector Boundaries in `sf` format and *WGS84* CRS (*epsg* 4326) 
+#' for all 314 *Community Safety Partnerships* in the England And Wales.
 #'
-#' Built by dissolving \code{OA} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
+#' Built by dissolving `OA` boundaries using the `output_areas` lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
 #' 
 #' Last update: DEC-19.
 #' 
-#' @format A \code{sf} dataframe with only one \code{CSP} column for the corresponding \emph{ONS} codes.
+#' @format A `sf` dataframe with only one `CSP` column for the corresponding *ONS* codes.
 #'
 #' You can easily add data loading for example the \url{https://github.com/lvalnegri/RdataUK} package.
 #'
@@ -448,14 +486,14 @@ NULL
 #
 #' LPA
 #'
-#' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
-#' for all 398 \emph{Local Planning Authorities} in the UK.
+#' Digital Vector Boundaries in `sf` format and *WGS84* CRS (*epsg* 4326) 
+#' for all 398 *Local Planning Authorities* in the UK.
 #'
-#' Built by dissolving \code{OA} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
+#' Built by dissolving `OA` boundaries using the `output_areas` lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
 #' 
 #' Last update: APR-20.
 #' 
-#' @format A \code{sf} dataframe with only one \code{LPA} column for the corresponding \emph{ONS} codes.
+#' @format A `sf` dataframe with only one `LPA` column for the corresponding *ONS* codes.
 #'
 #' You can easily add data loading for example the \url{https://github.com/lvalnegri/RdataUK} package.
 #'
@@ -467,14 +505,14 @@ NULL
 #
 #' RGD
 #'
-#' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
-#' for all 173 \emph{Registration Districts} in the England And Wales.
+#' Digital Vector Boundaries in `sf` format and *WGS84* CRS (*epsg* 4326) 
+#' for all 173 *Registration Districts* in the England And Wales.
 #'
-#' Built by dissolving \code{OA} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
+#' Built by dissolving `OA` boundaries using the `output_areas` lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
 #' 
 #' Last update: APR-19.
 #' 
-#' @format A \code{sf} dataframe with only one \code{RGD} column for the corresponding \emph{ONS} codes.
+#' @format A `sf` dataframe with only one `RGD` column for the corresponding *ONS* codes.
 #'
 #' You can easily add data loading for example the \url{https://github.com/lvalnegri/RdataUK} package.
 #'
@@ -486,14 +524,14 @@ NULL
 #
 #' LRF
 #'
-#' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
-#' for all 42 \emph{Local Resilience Forums} in England And Wales.
+#' Digital Vector Boundaries in `sf` format and *WGS84* CRS (*epsg* 4326) 
+#' for all 42 *Local Resilience Forums* in England And Wales.
 #'
-#' Built by dissolving \code{OA} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
+#' Built by dissolving `OA` boundaries using the `output_areas` lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
 #' 
 #' Last update: DEC-19.
 #' 
-#' @format A \code{sf} dataframe with only one \code{LRF} column for the corresponding \emph{ONS} codes.
+#' @format A `sf` dataframe with only one `LRF` column for the corresponding *ONS* codes.
 #'
 #' You can easily add data loading for example the \url{https://github.com/lvalnegri/RdataUK} package.
 #'
@@ -505,14 +543,14 @@ NULL
 #
 #' CCG
 #'
-#' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
-#' for all 142 \emph{Clinical Commissioning Groups} in the UK.
+#' Digital Vector Boundaries in `sf` format and *WGS84* CRS (*epsg* 4326) 
+#' for all 142 *Clinical Commissioning Groups* in the UK.
 #'
-#' Built by dissolving \code{LSOA} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
+#' Built by dissolving `LSOA` boundaries using the `output_areas` lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
 #' 
 #' Last update: MAY-21.
 #' 
-#' @format A \code{sf} dataframe with only one \code{CCG} column for the corresponding \emph{ONS} codes.
+#' @format A `sf` dataframe with only one `CCG` column for the corresponding *ONS* codes.
 #'
 #' You can easily add data loading for example the \url{https://github.com/lvalnegri/RdataUK} package.
 #'
@@ -524,14 +562,14 @@ NULL
 #
 #' STP
 #'
-#' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
-#' for all 42 \emph{Sustainability and Transformation Partnerships} in England.
+#' Digital Vector Boundaries in `sf` format and *WGS84* CRS (*epsg* 4326) 
+#' for all 42 *Sustainability and Transformation Partnerships* in England.
 #'
-#' Built by dissolving \code{CCG} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
+#' Built by dissolving `CCG` boundaries using the `output_areas` lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
 #' 
 #' Last update: .
 #' 
-#' @format A \code{sf} dataframe with only one \code{STP} column for the corresponding \emph{ONS} codes.
+#' @format A `sf` dataframe with only one `STP` column for the corresponding *ONS* codes.
 #'
 #' You can easily add data loading for example the \url{https://github.com/lvalnegri/RdataUK} package.
 #'
@@ -543,14 +581,14 @@ NULL
 #
 #' NHSR
 #'
-#' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
-#' for the 7 \emph{NHS England Regions} in England.
+#' Digital Vector Boundaries in `sf` format and *WGS84* CRS (*epsg* 4326) 
+#' for the 7 *NHS England Regions* in England.
 #'
-#' Built by dissolving \code{NHSO} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
+#' Built by dissolving `NHSO` boundaries using the `output_areas` lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
 #' 
 #' Last update: MAY-21.
 #' 
-#' @format A \code{sf} dataframe with only one \code{NHSR} column for the corresponding \emph{ONS} codes.
+#' @format A `sf` dataframe with only one `NHSR` column for the corresponding *ONS* codes.
 #'
 #' You can easily add data loading for example the \url{https://github.com/lvalnegri/RdataUK} package.
 #'
@@ -562,14 +600,14 @@ NULL
 #
 #' CIS.
 #'
-#' Digital Vector Boundaries in \code{sf} format and \emph{WGS84} CRS (\emph{epsg}) 4326) 
-#' for the 133 \emph{Covid Infection Survey Areas} in England.
+#' Digital Vector Boundaries in `sf` format and *WGS84* CRS (*epsg* 4326) 
+#' for the 133 *Covid Infection Survey Areas* in England.
 #'
-#' Built by dissolving \code{OA} boundaries using the \code{output_areas} lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
+#' Built by dissolving `OA` boundaries using the `output_areas` lookup table from the \url{https://github.com/lvalnegri/RgeoUK} package.
 #' 
 #' Last update: DEC-20.
 #' 
-#' @format A \code{sf} dataframe with only one \code{CIS} column for the corresponding \emph{ONS} codes.
+#' @format A `sf` dataframe with only one `CIS` column for the corresponding *ONS* codes.
 #'
 #' You can easily add data loading for example the \url{https://github.com/lvalnegri/RdataUK} package.
 #'
